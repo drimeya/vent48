@@ -1,0 +1,95 @@
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top__wrapper">
+                <nav>
+                    <ul class="header__top__menu">
+                        <li>
+                            <a href="#">Гарантии</a>
+                        </li>
+                        <li>
+                            <a href="#">Возврат</a>
+                        </li>
+                        <li>
+                            <a href="#">Монтаж</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__top__social">
+                    <li>
+                        <a href="#">
+                            <img src="img/sprites/whatsapp.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/sprites/telegram.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__main">
+        <div class="container">
+            <div class="header__main__wrapper">
+                <div class="header__main__logo">
+                    <img src="/img/logo.png" srcset="/img/logo_2x.png 2x" alt="Вент и Винт логотип">
+                </div>
+                <button class="btn btn_transp">Рассчитать стоимость</button>
+                <div class="header__main__contacts">
+                    <p class="header__main__contacts__text">Бесплатно по России</p>
+                    <a href="tel:+78002509961" class="header__main__contacts__tel">8 800 250 9961</a>
+                    <a href="#" class="header__main__contacts__zakaz">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="container">
+            <div class="header__menu__wrapper">
+                <nav class="header__menu__nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="catalog-btn">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <img src="/img/sprites/search.svg" id="search-trigger" alt="Поиск">
+                    </ul>
+                </nav>
+                <div class="header__menu__search">
+                    <!-- поиск взяла с живого -->
+                    <form action="/search" method="get" class="header__menu__search__form" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+                        <meta itemprop="target" content="/search?search={query}">
+                        <input itemprop="query-input" type="text" name="search" class="header__menu__search__input" placeholder="Поиск по сайту">
+                        <input type="submit" class="header__menu__search__submit">
+                        <re-captcha data-name="captcha" data-sitekey="6LcYvrMcAAAAAKyGWWuW4bP1De41Cn7t3mIjHyNN" data-lang="ru" data-rsize="invisible" data-type="image" data-theme="light"></re-captcha>
+                        <div id="close-trigger"></div>
+                    </form>
+                </div>
+                <div class="header__menu__icons">
+                    <a href="#">
+                        <img class="header__menu__icons-comp" src="/img/sprites/compare.svg" alt="Сравнение">
+                    </a>
+                    <a href="#">
+                        <img class="header__menu__icons-cart" src="/img/sprites/cart.svg" alt="Корзина">
+                    </a>
+                    <a href="#">
+                        <img class="header__menu__icons-login" src="/img/sprites/login.svg" alt="Вход">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

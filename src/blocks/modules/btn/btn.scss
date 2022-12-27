@@ -1,0 +1,46 @@
+.btn {
+    padding: 17px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: $orange;
+    cursor: pointer;
+    transition: 0.2s all;
+    border: none;
+    &:hover {
+        background: #ef8552;
+    }
+    &_transp {
+        border: 1px solid #F15C13;
+        color: #1D2227;
+        background: none;
+        &:hover {
+            background: $orange;
+            color: #FFFFFF;
+        }
+    }
+    &_small {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 9px 14px;
+    }
+    &_cart {
+        svg {
+            width: 17px;
+            height: 17px;
+        }
+    }
+    &_white {
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        &:hover {
+            background: #ef8552;
+        }
+    }
+    &_large {
+        padding: 17px 65px;
+    }
+}

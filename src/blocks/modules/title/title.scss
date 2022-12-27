@@ -1,0 +1,14 @@
+.title {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    &_white {
+        color: #FFFFFF;
+    }
+    &_big {
+        font-size: 45px;
+        line-height: 54px;
+    }
+}

@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    background: #F5F5F5;
+    color: #1D2227;
+}
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;

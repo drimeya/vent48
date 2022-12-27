@@ -1,0 +1,16 @@
+.clients {
+    padding: 67px 0;
+    background: #fff;
+    &__text {
+        margin-bottom: 70px;
+    }
+    .row {
+        row-gap: 20px;
+    }
+    &__item {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

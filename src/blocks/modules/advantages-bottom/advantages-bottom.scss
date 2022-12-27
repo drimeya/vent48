@@ -1,0 +1,52 @@
+.advantages-bottom {
+    padding: 45px 0 92px 0;
+    .title {
+        max-width: 377px;
+    }
+    .row {
+        margin-top: 66px;
+        row-gap: 43px;
+        counter-reset: section;   
+    }
+    &__item {
+        position: relative;
+        counter-increment: section; 
+        height: 100%;
+        padding: 35px 20px 30px 20px;
+        border: 1px solid $orange;
+        border-radius: 5px;
+        height: 200px;
+        &__title {
+            font-family: 'Exo 2';
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            max-width: 200px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 130%;
+            color: #767676;
+            margin: 0;
+        }
+        &::after {
+            content: counter(section);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-family: 'Exo 2';
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 25px;
+            color: #FFFFFF;
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            background: #F15C13;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.callback {
+    background: $dark-blue;
+    padding: 56px 0;
+    p {
+        max-width: 380px;
+        margin: 15px 0 40px 0;
+        color: #FFFFFF;
+    }
+    &__img {
+        padding-left: 80px;
+        padding-top: 20px;
+        img {
+            width: 450px;
+            object-fit: contain;
+        }
+    }
+}

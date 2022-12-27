@@ -1,0 +1,51 @@
+.why-us {
+    padding: 70px 0 65px 0;
+    background: #fff;
+    .title {
+        max-width: 320px;
+    }
+    &__text {
+        margin: 15px 0;
+        max-width: 435px;
+    }
+    &__years {
+        margin-top: 5px;
+        margin-bottom: 50px;
+        &__item {
+            &__title {
+                font-family: 'Exo 2';
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 43px;
+                color: $orange;
+                margin-bottom: 6px;
+            }
+            &__text {
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+    }
+    .iframe-trigger {
+        position: relative;
+        margin-top: 60px;
+        &::after {
+            content: '';
+            display: block;
+            width: 78px;
+            height: 78px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url("/img/sprites/play.svg") center center / contain no-repeat;
+            cursor: pointer;
+            transition: 0.1s all;
+        }
+        &:hover {
+            &:after {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+    }
+}

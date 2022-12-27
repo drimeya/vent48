@@ -1,0 +1,22 @@
+.advantages {
+    padding: 65px 0 37px 0;
+    &__item {
+        margin-bottom: 15px;
+        max-width: 90%;
+        &__icon {
+            margin-bottom: 15px;
+        }
+        &__title {
+            font-family: 'Exo 2';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 6px;
+        }
+        &__text {
+            margin: 0;
+            font-size: 15px;
+            color: #767676;
+        }
+    }
+}
