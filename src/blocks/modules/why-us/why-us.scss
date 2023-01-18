@@ -47,5 +47,32 @@
                 transform: translate(-50%, -50%) scale(1.1);
             }
         }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .why-us {
+        &__years {
+            &__item {
+                &__title {
+                    font-size: 26px;
+                    line-height: 31px;
+                }
+                &__text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .why-us {
+        padding: 44px 0 50px 0;
+        .iframe-trigger {
+            margin-top: 0;
+            margin-bottom: 28px;
+        }
     }
 }

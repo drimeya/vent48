@@ -20,3 +20,17 @@
         }
     }
 }
+@media (max-width: 576px) {
+    .advantages {
+        padding: 40px 0 10px 0;
+        &__item {
+            &__title {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &__text {
+                font-size: 14px;
+            }
+        }
+    }
+}

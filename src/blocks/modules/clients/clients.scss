@@ -4,13 +4,30 @@
     &__text {
         margin-bottom: 70px;
     }
-    .row {
-        row-gap: 20px;
-    }
     &__item {
+        margin-bottom: 15px;
         img {
             width: 100%;
             height: auto;
         }
+    }
+}
+@media (max-width: 992px) {
+    .clients {
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .clients {
+        iframe {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .clients {
+        padding: 34px 0;
     }
 }

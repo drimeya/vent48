@@ -50,3 +50,20 @@
         }
     }
 }
+@media (max-width: 576px) {
+    .advantages-bottom {
+        padding: 27px 0 58px 0;
+        .row {
+            margin-top: 42px;
+            row-gap: 30px;
+        }
+        &__item {
+            height: 142px;
+            &__title {
+                max-width: unset;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}

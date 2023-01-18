@@ -1,0 +1,97 @@
+.contacts {
+    padding: 20px 0 90px 0;
+    background: #fff;
+    &__text {
+        margin-top: 26px;
+        p {
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #1D2227;
+            cursor: pointer;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    &__tel {
+        margin-top: 30px;
+        background: #FBFBFB;
+        border-radius: 5px;
+        padding: 19px;
+        a {
+            font-weight: 600;
+            font-size: 20px;
+            color: #1D2227;
+            text-decoration: none;
+            &:hover {
+                color: $orange;
+            }
+        }
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            color: $orange;
+            margin: 0;
+        }
+    }
+    &__social {
+        margin-top: 24px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__bigtext {
+        font-family: 'Exo 2';
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 10px;
+    }
+    form {
+        input {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: #FBFBFB;
+            border: 1px solid #DBDBDB;
+            border-radius: 5px;
+            color: #767676;
+            margin-bottom: 10px;
+        }
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: #FBFBFB;
+            border: 1px solid #DBDBDB;
+            border-radius: 5px;
+            color: #767676;
+            resize: none;
+            height: 86px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .contacts {
+        &__bigtext {
+            margin-top: 35px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contacts {
+        padding: 20px 0 25px 0;
+        &__bigtext {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+    }
+}

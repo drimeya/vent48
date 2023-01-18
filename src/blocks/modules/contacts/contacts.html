@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <h3 class="title"></h3>
+                <h3 class="title">Контакты</h3>
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-6 col-lg-5">
                         <div class="contacts__text">
                             <p><b>г. Липецк</b></p>
                             <p>ул. Мичурина 28 "Е"</p>
@@ -12,7 +12,7 @@
                             <a href="mailto:ventdv@mail.ru">ventdv@mail.ru</a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-6 col-lg-5">
                         <div class="contacts__text">
                             <p><b>г. Елец</b></p>
                             <p>ул. Костенко 67 "Д"</p>
@@ -21,10 +21,47 @@
                         </div>
                     </div>
                 </div>
-                .conta
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <div class="contacts__tel">
+                            <a href="tel:88002509961">8 800 250 99 61</a>
+                            <p>Бесплатно по России, без выходных</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="header__top__social contacts__social">
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79107429961">
+                            <img src="img/sprites/whatsapp.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tlgg.ru/9107429961">
+                            <img src="img/sprites/telegram.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="viber://chat?number=%2B79107429961">
+                            <img src="img/viber.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="skype:ventdv">
+                            <img src="img/sprites/skype.svg">
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="col-12 col-md-6">
-                
+                <div class="contacts__bigtext">Обратный звонок</div>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя" name="name" autocomplete="name">
+                    <input type="text" placeholder="Номер телефона" name="tel" autocomplete="tel">
+                    <textarea name="message" cols="30" rows="10" placeholder="Вопрос или комментарий"></textarea>
+                    <re-captcha data-name="captcha" data-sitekey="6LcYvrMcAAAAAKyGWWuW4bP1De41Cn7t3mIjHyNN" data-lang="ru" data-rsize="invisible" data-type="image" data-theme="light"></re-captcha>
+                    <button class="btn btn_block">Отправить заявку</button>
+                </form>
             </div>
         </div>
     </div>

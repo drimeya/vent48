@@ -13,10 +13,34 @@
         z-index: -1;
     }
     &__row {
+        position: relative;
         margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        border: 1px solid #D7D7D7;
+        border-right: none;
+        &:not(.slick-slider){
+            display: flex;
+            overflow: hidden;
+            .special-offer__item {
+                width: 25%;
+                flex-shrink: 0;
+            }
+        }
+        .slick-arrow {
+            font-size: 0;
+            position: absolute;
+            left: -60px;
+            top: 50%;
+            border: none;
+            background: url("/img/sprites/special-offer-arr.svg");
+            width: 46px;
+            height: 46px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &.slick-next {
+                left: unset;
+                right: -60px;
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
     }
     &__item {
         position: relative;
@@ -24,10 +48,7 @@
         flex-direction: column;
         background: #fff;
         padding: 24px;
-        border-right: 1px solid #D7D7D7;
-        &:last-child{
-            border: none;
-        }
+        border: 1px solid #D7D7D7;
         img {
             display: block;
             height: 206px;
@@ -73,6 +94,36 @@
             font-size: 20px;
             line-height: 24px;
             margin-bottom: 12px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .special-offer {
+        &__row {
+            &:not(.slick-slider){
+                .special-offer__item {
+                    width: 50%;
+                }
+            }
+        }
+        .slick-dots {
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .special-offer {
+        padding: 25px 0 47px 0;
+        &__row {
+            padding: 0 30px;
+            &:not(.slick-slider){
+                .special-offer__item {
+                    width: 100%;
+                }
+            }
+        }
+        &:after {
+            height: 121px;
         }
     }
 }

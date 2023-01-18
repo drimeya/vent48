@@ -43,4 +43,17 @@
     &_large {
         padding: 17px 65px;
     }
+    &_block {
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .btn {
+        &_small {
+            padding: 7px 20px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
 }

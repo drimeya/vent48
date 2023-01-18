@@ -30,6 +30,9 @@
             width: 30px;
             transition: 0.15s all;
         }
+        .btn {
+            display: none;
+        }
         &:hover {
             .catalog__item__arrow {
                 transform: translateX(16px);
@@ -52,7 +55,9 @@
 
             }
         }
-        &_big {
+        &:first-child,
+        &:nth-child(14),
+        &:nth-child(24) {
             padding: 25px 30px;
             border: none;
             height: 380px;
@@ -81,20 +86,78 @@
                 }
             }
             .btn {
+                display: inline;
                 align-self: flex-start;
             }
         }
-        &_orange {
+        &:first-child  {
             grid-area: 1 / auto / 3 / auto;
             background: $orange;
         }
-        &_black {
+        &:nth-child(14)  {
             grid-area: 5 / 3 / 7 / 4;
             background: #1D2227;
         }
-        &_orange2 {
+        &:nth-child(24)  {
             grid-area: 9 / auto / 11 / auto;
             background: $orange;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .catalog {
+        &__row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item {
+            &:nth-child(14) {
+                grid-area: 8/1/9/2;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .catalog {
+        padding: 35px 0 60px 0;
+        &__row {
+            display: flex;
+            flex-direction: column;
+        }
+        &__item {
+            padding: 17px 19px;
+            height: 112px!important;
+            &:first-child,
+            &:nth-child(14),
+            &:nth-child(24) {
+                padding: 17px 19px;
+                align-items: flex-start;
+                .catalog__item {
+                    &__title {
+                        max-width: calc(90% - 104px);
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                    }
+                    &__img {
+                        position: absolute;
+                        bottom: -2px;
+                        width: 104px;
+                        height: 94px;
+                    }
+                }
+            }
+            &__title {
+                font-size: 16px;
+                line-height: 19px;
+                max-width: calc(90% - 104px);
+            }
+            &__img {
+                width: 104px;
+                height: 94px;
+                img {
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

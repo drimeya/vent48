@@ -1,10 +1,53 @@
 .main-banner {
     height: 488px;
-    &__item {
+    overflow: hidden;
+    &__slider {
         height: 100%;
+    }
+    &-nav{
+        position: relative;
+        bottom: 40px;
+        &__wrapp {
+            display: flex;
+        }
+        .slick-arrow {
+            display: block;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: url("/img/sprites/back.svg");
+            border: none;
+            width: 18px;
+            height: 18px;
+            padding: 0;
+            cursor: pointer;
+            margin-right: 18px;
+            &.slick-next {
+                transform: rotate(180deg);
+                margin:0 0 0 18px;
+            }
+        }
+        .slick-dots {
+            margin: unset;
+            justify-content: flex-start;
+            li {
+                button {
+                    background: #fff;
+                }
+                &.slick-active {
+                    button {
+                        width: 39px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    &__item {
+        width: 100%;
+        height: 488px;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        overflow: hidden;
         .container {
             height: 100%;
         }
@@ -52,5 +95,83 @@
 @supports (background-image: url('/img/main-banner/bg.webp')) {
     .main-banner-slide-1 {
         background-image: url('/img/main-banner/bg.webp');
+    }
+}
+@media (max-width:1200px) {
+    .main-banner__item__img {
+        right: -50px;
+    }
+}
+@media (max-width: 992px) {
+    .main-banner__item__img {
+        right: 0;
+        max-width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .main-banner {
+        height: 376px;
+        &__item {
+            position: relative;
+            height: 376px;
+            &__wrapp {
+                padding: 40px 0 15px 0;
+                flex-direction: column;
+            }
+            &__content {
+                &__title {
+                    margin-bottom: 26px;
+                }
+            }
+            &__img {
+                position: absolute;
+                max-width: 60%;
+                bottom: -20px;
+                right: -20px;
+                &__star {
+                    top: 14px;
+                    width: 65px;
+                    height: 65px;
+                    font-size: 11.8266px;
+                    line-height: 14px;
+                    background-size: contain;
+                }
+            }
+        }
+        &-nav {
+            .slick-prev,
+            .slick-next {
+                display: none;
+            }
+            .dots {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .main-banner {
+        &__item {
+            &__img {
+                max-width: 95%;
+                right: -10%;
+            }
+        }
+        .slick-dots {
+            li {
+                &.slick-active {
+                    button {
+                        width: 8px;
+                    }
+                    
+                }
+            }
+        }
+        &-nav {
+            bottom: 20px;
+        }
     }
 }

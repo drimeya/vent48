@@ -8,6 +8,10 @@ body {
     line-height: 140%;
     background: #F5F5F5;
     color: #1D2227;
+    &.hidden {
+        overflow: hidden; 
+        height: 100%
+    }
 }
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
